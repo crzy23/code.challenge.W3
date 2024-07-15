@@ -23,3 +23,27 @@ These extra bonus deliverables involve using `fetch` to update data on the `json
 
 1. When a ticket is purchased, persist the updated number of `tickets_sold` on the server. Remember, the frontend shows the number of available tickets based on the `tickets_sold` and the `capacity`, so only the `tickets_sold` should be updated on the backend when a ticket is purchased. You will need to make a request that follows this structure:
 
+# A template to deploy JSON Server to Vercel, allow you to run fake REST API online!
+
+Demo from this repository:
+
+# https://json-server-in.vercel.app
+# https://json-server-in.vercel.app/api/posts
+# Powered by Vercel
+
+# How to use
+Click "Use this template" or clone this repository.
+Update or use the default db.json in the repository.
+Sign Up or login into Vercel.
+From the Vercel dashboard, click "+ New Project" then "Import" your repository.
+In the "Configure Project" screen, leave everything default and click "Deploy".
+Wait until deployment is done, and your own JSON server is ready to serve!
+
+By default, only GET operation is allowed, thanks to the contribution by @VicAv99 at #6, we can now enable write operations as well.
+
+You can find the example code in api/server.js.
+
+Reference
+# https://github.com/typicode/json-server
+# https://vercel.com
+# https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
